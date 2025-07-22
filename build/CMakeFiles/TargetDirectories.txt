@@ -1,0 +1,4 @@
+/home/ahmed/learn_cpp/build/CMakeFiles/myproject.dir
+/home/ahmed/learn_cpp/build/CMakeFiles/run.dir
+/home/ahmed/learn_cpp/build/CMakeFiles/edit_cache.dir
+/home/ahmed/learn_cpp/build/CMakeFiles/rebuild_cache.dir
