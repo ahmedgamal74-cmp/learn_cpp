@@ -7,6 +7,7 @@
 #include <chrono>
 
 #include "typedefs.h"
+#include "myFunctions.h"
 
 // using namespace std;
 
