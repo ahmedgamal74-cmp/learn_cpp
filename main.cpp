@@ -67,30 +67,29 @@ int main() {
 	// 		iCount++;
 	// }
 
-    int iCount = 0;
-    long long iterations = 0;  // Counter for total innermost executions
+    // int iCount = 0;
+    // long long iterations = 0;  // Counter for total innermost executions
 
-    for (int a = 0; a < 100; ++a){
-		for (int b = 0; b < 100; ++b){
-			if((a+b) > 100) break;
+    // for (int a = 0; a < 100; ++a){
+	// 	for (int b = 0; b < 100; ++b){
+	// 		if((a+b) > 100) break;
 
-            for (int c = 0; c < 100; ++c){
-				if((a+b+c) > 100) break;
+    //         for (int c = 0; c < 100; ++c){
+	// 			if((a+b+c) > 100) break;
 
-                for (int d = 0; d < 100; ++d){
-                    ++iterations; 
+    //             for (int d = 0; d < 100; ++d){
+    //                 ++iterations; 
 					
-                    if (a + b + c + d == 100)
-                        iCount++;
-                }
-			}
-		}
-	}
-        
-		
-    std::cout << "iCount = " << iCount << std::endl;
-    std::cout << "Total innermost loop executions: " << std::scientific << 
-						std::setprecision(2) << static_cast<double>(iterations) << std::endl;
+    //                 if (a + b + c + d == 100)
+    //                     iCount++;
+    //             }
+	// 		}
+	// 	}
+	// }
+
+    // std::cout << "iCount = " << iCount << std::endl;
+    // std::cout << "Total innermost loop executions: " << std::scientific << 
+	// 					std::setprecision(2) << static_cast<double>(iterations) << std::endl;
 
 	uint32 var4 = 4; // static_cast<int>()
 
