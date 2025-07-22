@@ -8,10 +8,6 @@ void myPrintArray(uint32 *ArrPtr, uint32 ArrSize){
 
 }
 
-void swap_uint_32(uint32 *num1, uint32 *num2){
-
-}
-
 uint32 myDecToBin(uint32 num, uint8 bin[], bool print){ 
     /* returns no of digits and writes the binary in opposite direction in the array */
     return 0;

@@ -94,9 +94,13 @@ int main() {
     // std::cout << "Total innermost loop executions: " << std::scientific << 
 	// 					std::setprecision(2) << static_cast<double>(iterations) << std::endl;
 
+	uint32 v1=1, v2=2;
+	mySwap(&v1, &v2);
+	std::cout<<"V1: "<<v1<<"\t\t V2: "<<v2<<std::endl;
+
 	uint32 var4 = 4; // static_cast<int>()
 
 	mySeparate();
-	std::cout<<"Goodbye, Ahmed!";
+	std::cout<<"Goodbye, Ahmed!"<<std::endl;
 	return 0;
 }
