@@ -237,9 +237,16 @@ CMakeFiles/myproject.dir/main.cpp.o: ../main.cpp \
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/c++/11/chrono \
+  /usr/include/c++/11/ratio \
+  /usr/include/c++/11/bits/parse_numbers.h \
   ../typedefs.h \
   /usr/include/c++/11/cstddef
 
+
+/usr/include/c++/11/bits/parse_numbers.h:
+
+/usr/include/c++/11/ratio:
 
 /usr/include/x86_64-linux-gnu/bits/uio_lim.h:
 
@@ -354,6 +361,8 @@ CMakeFiles/myproject.dir/main.cpp.o: ../main.cpp \
 /usr/include/c++/11/cerrno:
 
 /usr/include/stdio.h:
+
+/usr/include/c++/11/chrono:
 
 /usr/include/c++/11/cstdio:
 
