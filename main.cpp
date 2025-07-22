@@ -12,8 +12,10 @@
 // using namespace std;
 
 int main() {
-	std::cout<<"Hello, Ahmed!"<<std::endl;
-	std::cout<<"-------------------------------------------------------------------------------------------"<<std::endl;
+	std::cout<<"Hello, Ahmed!";
+	mySeparate();
+
+	// std::cout<<"-------------------------------------------------------------------------------------------"<<std::endl;
 
 	// unsigned short var1 = 0xF0F0;			// prunes the MSBs 
 	// cout << "Var1: 0x" << uppercase << hex << var1 << endl;	    
@@ -94,7 +96,7 @@ int main() {
 
 	uint32 var4 = 4; // static_cast<int>()
 
-	std::cout<<"-------------------------------------------------------------------------------------------"<<std::endl;
-	std::cout<<"Goodbye, Ahmed!"<<std::endl;
+	mySeparate();
+	std::cout<<"Goodbye, Ahmed!";
 	return 0;
 }
