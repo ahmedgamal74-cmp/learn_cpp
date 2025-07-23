@@ -1,1 +1,4 @@
-g++ main.cpp -o app && ./app
+# g++ main.cpp .cpp -o app && ./app
+cd build
+make run
+cd ..
