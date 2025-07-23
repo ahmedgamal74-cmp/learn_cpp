@@ -98,6 +98,10 @@ int main() {
 	mySwap(&v1, &v2);
 	std::cout<<"V1: "<<v1<<"\t\t V2: "<<v2<<std::endl;
 
+	v1=100; v2=200;
+	mySwap<uint32>(&v1, &v2);
+	std::cout<<"V1: "<<v1<<"\t\t V2: "<<v2<<std::endl;
+
 	uint32 var4 = 4; // static_cast<int>()
 
 	mySeparate();
