@@ -1,7 +1,15 @@
 #include "myFunctions.h"
 
 void mySeparate(void){
-    printf("\n__________________________________________________________________________________________________________\n\n");
+    std::cout<<"--------------------------------------------------------------------------------------------------------------"
+    <<std::endl;
+}
+
+void myRandomIntegarArrayGenerator(int32* array, uint32 length, int32 min, int32 max)
+{
+    for(uint32 i=0; i<length; i++){
+        array[i] = min + rand() % (max-min+1);
+    }
 }
 
 void myPrintArray(uint32 *ArrPtr, uint32 ArrSize){

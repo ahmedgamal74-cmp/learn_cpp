@@ -5,6 +5,9 @@
 #include <cctype>
 #include <climits>
 #include <chrono>
+#include <ctime>
+#include <cstdlib>
+#include <assert.h>
 
 #include "typedefs.h"
 #include "myFunctions.h"
@@ -12,7 +15,10 @@
 // using namespace std;
 
 int main() {
-	std::cout<<"Hello, Ahmed!";
+
+	srand(time(nullptr));
+	
+	std::cout<<"Hello, Ahmed!\n";
 	mySeparate();
 
 	// std::cout<<"-------------------------------------------------------------------------------------------"<<std::endl;
@@ -94,15 +100,34 @@ int main() {
     // std::cout << "Total innermost loop executions: " << std::scientific << 
 	// 					std::setprecision(2) << static_cast<double>(iterations) << std::endl;
 
-	uint32 v1=1, v2=2;
-	mySwap(&v1, &v2);
-	std::cout<<"V1: "<<v1<<"\t\t V2: "<<v2<<std::endl;
+	// uint32 v1=1, v2=2;
+	// mySwap(&v1, &v2);
+	// std::cout<<"V1: "<<v1<<"\t\t V2: "<<v2<<std::endl;
 
-	v1=100; v2=200;
-	mySwap<uint32>(&v1, &v2);
-	std::cout<<"V1: "<<v1<<"\t\t V2: "<<v2<<std::endl;
+	// v1=100; v2=200;
+	// mySwap<uint32>(&v1, &v2);
+	// std::cout<<"V1: "<<v1<<"\t\t V2: "<<v2<<std::endl;
 
-	uint32 var4 = 4; // static_cast<int>()
+	const uint8 LEN = 10;
+	assert(LEN>0);
+	std::cout<<"Arr Len = "<<static_cast<uint32>(LEN)<<std::endl;
+
+	int32 myArr[LEN] = {1,2,3};
+	std::cout<<"myArr: "<<myArr<<std::endl;
+	std::cout<<"&myArr[0]: "<<&myArr[0]<<std::endl;
+
+	myRandomIntegarArrayGenerator(myArr, LEN, -10, 10);
+
+	for(uint32 i=0; i<LEN; ){
+		std::cout<<myArr[i]<<"\t";
+		i++;
+		if(i==LEN){
+			std::cout<<std::endl;
+		}
+	}
+
+	// uint32 var4 = 4; // static_cast<int>()
+	// printf("c\n");
 
 	mySeparate();
 	std::cout<<"Goodbye, Ahmed!"<<std::endl;
